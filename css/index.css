@@ -1,0 +1,233 @@
+body { 
+    margin: 0;   
+    scroll-behavior: smooth;
+}
+
+/*navbar*/
+.navbar {
+    padding: 15px 0px 20px 70px;
+    position: fixed;
+    color: rgb(52,57,63);
+    width: 100%;
+    z-index: 10;    
+}   
+
+.navbar-nav {
+    padding-left: 350px;
+    
+}
+
+#codo {
+    width: 7%;
+}
+    
+/*primer contenedor */
+
+#comprarTickets {
+    color: green;
+}
+.conf2 {
+    width: 100%; 
+	height: 800px;
+    display: flex;
+    flex-direction: column;    
+    background-image: url(../imagenes/ba1.jpg);
+    background-size: 100% 100%;
+    background-color: #2D2C2B;
+    background-blend-mode: soft-light;
+    color: white;
+    justify-content: center;  
+    align-items: flex-end ;   
+    padding-right: 100px;
+        
+}
+
+#tickets {
+    background-color: rgb(25,135,84);
+    border-radius: 2px;
+}
+.btn {
+    color: white;
+    border: 1px solid white;    
+}
+
+button .btn .btn-succes {
+    background-color: green;
+    border: none;
+}
+
+.container_texto {
+    width: 35%;    
+}
+
+/* segundo contenedor*/
+
+.tarjetas {
+    margin: 0px 200px;
+}
+
+.contenedor-tarjetas {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+
+.oradores {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oradores h1 {
+    margin:0 0 10 0;
+    font-size: 25px;
+}
+
+.oradores h6 {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.oradores span {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+p.card-text {
+    font-size: 11px;
+}
+
+h5.card-title {
+    margin: 0px 0px 14px;
+    font-size: 18px;
+}
+
+a.btn.btn-danger {
+    padding: 0px;
+    font-size: 11px;
+    font-weight: bolder;
+}
+
+a.btn.btn-secondary {
+    padding: 0px;
+    font-size: 11px;
+    font-weight: bolder;
+}
+a.btn.btn-info {
+    padding: 0px;
+    font-size: 11px;
+    font-weight: bolder;
+}
+a.btn.btn-warning {
+    padding: 1px;
+    font-size: 11px;
+    font-weight: bolder;
+    color: black;
+}
+
+/*tercer contenedor*/
+
+.contenedor-flex {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.confBsAs {
+    background-color: #2D2C2B;
+    color: white;       
+}
+
+p.texto {
+    padding-left: 20px;
+}
+
+.confBsAs h2 {
+    padding: 15px 0px 0px 20px;
+}
+
+.confBsAs button {
+    margin-left: 18px;
+    border: 1px solid white;
+}
+
+/*cuarto contenedor*/
+
+.contenedor-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        gap: 10px;
+}
+
+.oradores h6 {
+    margin-top: 25px;
+    opacity: 0.9;
+}
+.oradores span {
+    margin-bottom: 15px;
+    margin-top: 0px;
+    opacity: 0.9;
+}
+
+#span1 {
+    font-size: 12px; 
+    padding-right: 380px;  
+    opacity: 0.6;    
+}    
+    
+
+.btn-enviar {
+    background-color: rgb(150,201,62);
+    color: white;
+    width: 590px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+span input {
+    width: 292px;  
+    font-size: 10px; 
+    height: 30px; 
+}
+
+#span2 {
+    border-bottom: 1px dotted;
+}
+
+textarea {
+    padding: 5px 0px 0px 20px;
+    resize: none;
+    border-color: linen;    
+}
+
+/*footer*/
+
+.contenedor-footer {
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 80px;
+    align-items: center;    
+    display: inline-flex;
+    justify-content: space-evenly;
+    background-color: rgb(36, 67, 85);
+    position: absolute;
+}
+
+.contenedor-footer a {
+    text-decoration: none;
+    color: white;
+    width: min-content;
+}
+
