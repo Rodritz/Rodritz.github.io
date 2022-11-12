@@ -145,8 +145,8 @@ h6 {
 /*responsive*/
 
 @media screen and (max-width: 478px) {
-    html {
-        width: -webkit-fill-available ;
+    html { 
+        width: max-content;              
     }
     .contenedor-tarjetas {
         flex-direction: column;
