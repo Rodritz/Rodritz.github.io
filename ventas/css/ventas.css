@@ -147,4 +147,8 @@ h6 {
     .contenedor-footer {
         zoom: 80%;
     }    
+
+    form {       
+        margin-left: 10px;            
+    }
 }
