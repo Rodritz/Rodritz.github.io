@@ -76,13 +76,11 @@ body {
 
 /* segundo contenedor */
 
-form {
-    /*width: 100%;*/
+form {    
     max-width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
     align-items: center;
     gap: 10px;
 }
