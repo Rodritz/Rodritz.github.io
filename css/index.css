@@ -231,4 +231,7 @@ textarea {
     .contenedor-footer {
         zoom: 80%;
     }
+    #codo {
+        width: 15%;
+    }
 }
