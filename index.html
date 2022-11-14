@@ -10,7 +10,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark" >
       <div class="container-fluid" >
         <img src="imagenes/codoacodo.png" alt="codo a codo" id="codo"/>
         <a class="navbar-brand" href="#">Conf Bs As</a>
@@ -30,25 +30,27 @@
     </nav>
   </header>
     <main>
-      <section>
-        <div class="contenedor-flex">
-          <div class="conf2">
+      <section>        
+          <div class="contenedor-1">
             <h2>Conf Bs As</h2>
-            <p class="container_texto">Bs As llega por primera vez a Argentina. Un evento para compartir con
-          nuestra comunidad el conocimiento y experiencia de los expertos que
-          estan creando el futuro de Internet. Ven a conocer a miembros del
-          evento, a otros estudiantes de Codo a Codo y a los oradores de primer
-          que tenemos para ti. Te esperamos!</p>
-            <div class="row">
-              <div class="col">
-              <button type="button" class="btn" href="#conviertete">Quiero ser orador</button>
-              <button type="button" class="btn btn-success" onclick="window.location.href='/ventas/ventas.html'">Comprar tickets</button>
-              </div>
+            <p class="texto1">
+              Bs As llega por primera vez a Argentina. Un evento para compartir con
+              nuestra comunidad el conocimiento y experiencia de los expertos que
+              estan creando el futuro de Internet. Ven a conocer a miembros del
+              evento, a otros estudiantes de Codo a Codo y a los oradores de primer
+              que tenemos para ti. Te esperamos!
+            </p>
+            <div class="column">
+              <button type="button" class="btn" onclick="location.href='#conviertete'">Quiero ser orador</button>
+              <button type="button" class="btn btn-success" onclick="location.href='../ventas/ventas.html'">Comprar tickets</button>
             </div>
-          </div>
-        </div>
+              
+              
+              
+            
+          </div>        
       </section>
-      <section class="tarjetas" id="oradores">
+      <section class="contenedor-2" id="oradores">
         <div class="oradores">
           <h6>CONOCE A LOS</h6>
           <h1>ORADORES</h1>
@@ -62,10 +64,9 @@
                 <a href="#" class="btn btn-info">React</a>
               </span>
               <h5 class="card-title">Steve Jobs</h5>
-              <p class="card-text">Lorem ipsum dolor dit amet. consectetur adipisicing elit. 
-                Et voluptatibus perferendis deleniti, totam fuga sequi iste! 
-                Facilis explicabo repellat ut similique incidunt? 
-                Ullam nois beatae, corporis facilis veniam magni ratione!</p>
+              <p class="card-text">Informático y empresario estadounidense. 
+                Padre del primer ordenador personal y fundador de Apple 
+                Computer, probablemente la empresa más innovadora del sector</p>
             </div>
           </div>
           <div class="card" style="width: 18rem;">            
@@ -76,10 +77,9 @@
                 <a href="#" class="btn btn-info">React</a>
               </span>
               <h5 class="card-title">Bill Gates</h5>
-              <p class="card-text">Lorem ipsum dolor dit amet. consectetur adipisicing elit. 
-                Et voluptatibus perferendis deleniti, totam fuga sequi iste! 
-                Facilis explicabo repellat ut similique incidunt? 
-                Ullam nois beatae, corporis facilis veniam magni ratione!</p>
+              <p class="card-text">Magnate empresarial, desarrollador de software, 
+                inversor, autor y filántropo estadounidense. Es cofundador de Microsoft, 
+                junto con difunto amigo de la infancia Paul Allen</p>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
@@ -90,62 +90,59 @@
                 <a href="#" class="btn btn-danger">Startups</a>
               </span>
               <h5 class="card-title">Ada Lovelace</h5>
-              <p class="card-text">Lorem ipsum dolor dit amet. consectetur adipisicing elit. 
-                Et voluptatibus perferendis deleniti, totam fuga sequi iste! 
-                Facilis explicabo repellat ut similique incidunt? 
-                Ullam nois beatae, corporis facilis veniam magni ratione!</p>
+              <p class="card-text">Matemática y escritora británica, célebre 
+                sobre todo por su trabajo acerca de la computadora mecánica 
+                de uso general de Charles Babbage, la denominada máquina 
+                analítica</p>
               </div>
           </div>
         </div>
       </section>
       <section>        
-        <div class="contenedor-flex">
-          <div class="col-6 img">
+        <div class="contenedor-3">
+          <div class="col-md-12 col-lg-6 img">
             <img src="imagenes/honolulu.jpg" alt="honolulu" width="100%"/>
           </div>          
-          <div class="col-6 confBsAs" id="confBsAs">
+          <div class="col-md-12 col-lg-6 confBsAs" id="confBsAs">
             <h2>Bs As - Octubre</h2>
-            <p class="texto">Buenos Aires es la provincia y localidad mas grande del estado de 
+            <p class="texto2">Buenos Aires es la provincia y localidad mas grande del estado de 
               Argentina, en los Estados Unidos. Honolulu es la mas sureña de entre
               las principales ciudades estadounidenses. Aunque el nombre de 
               Honolulu se refiere al área urbana en la costa sureste de la isla 
               de Oahu, la ciudad y el condado de Honolulu han formado una 
               ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 
               600km2 de superficie).</p>
-          <button type="button" class="btn">Conocé más</button>
-          </div>
-          
-        </div>
-        
+          <button type="button" class="btn" onclick="location.href='#conviertete'">Conocé más</button>
+          </div>          
+        </div>        
       </section>       
-      <section class="contenedor-4" id="conviertete">
-        <div class="oradores" id="conviertete1">
+      <section >
+        <form class="contenedor-4" id="conviertete">
           <h6>CONVIÉRTETE EN UN</h6>
-          <h1>ORADORES</h1>
-          <span>Anótate como orador para dar una <span id="span2">charla ignite</span>. Cuéntanos de que quieres hablar!</span>
-        </div>
-        <div>
-          <form >
-            <span>
-              <label for="nombre"></label>  
-              <input name="nombre" id="nombre" required 
-                type="text"                              
+          <h1>ORADOR</h1>
+          <p>Anótate como orador para dar una <span>charla ignite</span>. Cuéntanos de que quieres hablar!</p>        
+          <div class="row">
+            <div class="col">
+              <input type="text"  
+                id="nombre"
+                class="form-control"                 
                 placeholder="Nombre">
-              <label for="apellido"></label>
-              <input name="apellido" 
-                id="apellido" required 
-                type="text"                              
+            </div>
+            <div class="col">
+              <input type="text"
+                id="apellido" 
+                class="form-control"
                 placeholder="Apellido">
-              </span>
-            <textarea name="textarea" 
-            id="" 
-            cols="75" rows="3"
-            placeholder="Sobre que quieres hablar?"></textarea>  
-            <span id="span1">Recuerda incluir un titulo para tu charla</span>
-            <button class="btn-enviar">Enviar</button>
-          </form>
-        </div>
-        
+            </div>                  
+          </div>                      
+          <textarea type="text" class="form-control"
+          name="textarea" 
+          id="" 
+          cols="75" rows="3"
+          placeholder="Sobre que quieres hablar?"></textarea>  
+          <p id="span1">Recuerda incluir un titulo para tu charla</p>
+          <button class="btn-enviar">Enviar</button>
+        </form>
       </section>
     </main>
     <footer>      
