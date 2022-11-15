@@ -14,7 +14,7 @@ body {
 
 .navbar-nav {
     padding-left: 350px;
-    
+    text-align: center;
 }
 
 #codo {
@@ -230,5 +230,11 @@ textarea {
     }
     .contenedor-footer {
         zoom: 80%;
+    }    
+}
+@media screen and (max-width: 1199px) {    
+    .navbar-nav {
+        padding-left: 0;
+        text-align: left;
     }    
 }
