@@ -224,6 +224,14 @@ textarea {
     width: min-content;
 }
 
+@media screen and (max-width: 576px) {
+    .texto1 {
+        width: 100%;    
+    }
+    .contenedor-1 {
+        padding: 0 15px;
+    }    
+}
 @media screen and (max-width: 680px) {    
     form {       
         margin-left: 10px;            
