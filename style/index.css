@@ -1,0 +1,390 @@
+*{
+    font-family: 'Roboto Serif', serif; 
+}
+html{
+    background-image: url("/imagenes/Encriptar-archivos-fonde.jpg");
+    background-size: cover;
+}
+body{
+    scroll-behavior: smooth;
+}
+
+/*-----------Header----------*/
+/*.header{
+    height: 180px;
+}*/
+.logo{ 
+    margin-left: 40px;
+    font-size: 180px;
+    text-decoration: none;
+    text-shadow: 0 0 5px black, 0 0 15px black, 0 0 30px black, 0 0 50px black;
+    animation: rainbow 10s infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        color: red;
+    }
+    14% {
+        color: orange;
+    }
+    28% {
+        color: yellow;
+    }
+    42% {
+        color: green;
+    }
+    57% {
+        color: blue;
+    }
+    71% {
+        color: indigo;
+    }
+    85% {
+        color: violet;
+    }
+    100% {
+        color: red;
+    }
+}
+
+/*----main----*/
+.main{
+    display: flex;
+    flex-wrap: wrap;
+
+    /*justify-content: center;*/
+    /*width: 1440px;*/
+    /*height: auto;*/
+    /*margin: 0 40px;*/
+    /*position: relative;*/
+   
+}
+
+/*-----aca comienza el css del primer contenedor-----*/
+.contenedor1{
+    width:936px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /*align-items: center;*/
+}
+
+.contenedor-textarea{
+    display: flex;
+    justify-content: center;
+}
+.textarea{
+    display: flex;
+    align-items: center;
+    resize: none;
+    font-size: 20px;
+    color: #E5E5E5;
+    border: none;
+    padding: 15px;
+    text-transform: lowercase;
+    background-color:transparent;
+}
+
+::placeholder{
+    text-align: center;
+    color: #E5E5E5;
+    font-size: 20px;
+    text-shadow: 0 0 10px black, 0 0 15px black, 0 0 20px black,0 0 25px black;
+}
+
+.textarea:focus{
+    outline: none; 
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px; 
+    backdrop-filter: blur(3px);           
+}
+
+.h6-contenedor1{
+    margin: 10px 124.9px;
+    font-size: 0.8em;
+    /*background-color: transparent;*/
+    color: #E5E5E5;
+}
+.h6-contenedor1:before{
+    content: "";
+}
+
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 12px 0 24px 0;
+    height: 67px;
+} 
+
+.btn-encriptar{
+    width: 332.50px;
+    height: 67px;
+    margin: 12px;
+    padding: 15px 0;
+    font-size: 18px;
+    color:#D8DFE8;
+    background:#0A3871;
+    border:none;
+    border-radius: 20px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.btn-encriptar:hover{
+    background: rgb(9, 243, 114); 
+    color: black;   
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+.btn-desencriptar{
+    width: 332.50px;
+    height: 67px;
+    margin: 12px;
+    padding: 14px 0;
+    font-size: 18px;
+    color: #0A3871;
+    background: #E5E5E5;
+    border:solid 1px;
+    border-radius: 20px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.btn-desencriptar:hover{
+    background: rgb(9, 243, 114); 
+    color: black;  
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+.btn-eliminar{
+    width: 332.50px;
+    height: 67px;
+    margin: 12px;
+    padding: 14px 0;
+    font-size: 18px;
+    color:#D8DFE8;
+    background:rgb(180,45,45);
+    border:none;
+    border-radius: 20px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.btn-eliminar:hover{
+    transform: scale(1.2);
+    background-color: red;
+    font-weight: bold;
+    
+}
+
+
+/*-----aca comienza el css del segundo contenedor-----*/
+.contenedor2{
+    position: relative;
+    width: 624px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.glass{
+    position: absolute;
+    border: none; 
+    resize: none;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+}
+
+.mensaje-codificado{
+    border: none;     
+    text-transform: lowercase;
+    padding: 20px;
+    color: #E5E5E5;
+    font-size: 20px;
+    resize: none;
+    background: rgba(255,255,255,0);
+    border-radius: 20px;
+    backdrop-filter: blur(3px);    
+}
+
+.imagen-hacker {
+    position: absolute;
+    top: 15%;
+    height: 45%;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.mensaje-codificado:focus{
+    outline: none;
+}
+
+.btn3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn-copiar{
+    width: 250px;
+    height: 67px;
+    margin: 12px 50px;
+    padding: 14px 0;
+    font-size: 18px;
+    color: #0A3871;
+    background: #E5E5E5;
+    border:solid 1px;
+    border-radius: 20px;
+    transition: 1s all;
+    cursor:pointer;
+    z-index: 1;
+}
+
+.btn-copiar:hover{
+    transform: scale(1.2);
+}
+
+.btn-pegar{
+    width: 250px;
+    height: 67px;
+    margin: 12px 50px;
+    padding: 14px 0;
+    font-size: 18px;
+    color: #0A3871;
+    background: #E5E5E5;
+    border:solid 1px;
+    border-radius: 20px;
+    transition: 1s all;
+    cursor:pointer;
+    z-index: 1;
+}
+
+.btn-pegar:hover{
+    transform: scale(1.2);
+}
+
+/*Aca comienza el footer*/
+
+.footer{
+    margin: 40px 0;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(7px);
+    
+}
+
+.footer-logo{
+    height: 50px;
+}
+
+/*responsive*/
+@media screen and (min-width: 1100px) and (max-width: 1559px){
+    .main{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width:992px){
+    .logo{
+        font-size: 160px;
+    }
+    .conteneder2{
+        width: 992px;
+    }
+    
+    .h6-contenedor1{
+        display: flex;
+        justify-content: center;
+    }    
+}
+
+@media screen and (max-width:768px){
+    
+    .textarea{
+        width: 730px;
+        font-size: 18px;
+    }
+    .conteneder2{
+        width: 768px;
+    }
+    ::placeholder{
+        font-size: 20px;
+    }
+    
+    .footer{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .logo{
+        font-size: 140px;
+    }
+    .textarea{
+        width:500px;
+    }
+    ::placeholder{
+        font-size: 17px;
+    }
+    .mensaje-codificado{
+        width: 400px;
+    }
+    .footer{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .logo{
+        font-size: 140px;
+    }
+    .textarea{
+        width:540px;
+    }
+    ::placeholder{
+        font-size: 17px;
+    }
+    .mensaje-codificado{
+        width: 400px;
+    }
+    .footer{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    
+    .textarea{
+        width:400px;
+    }
+    ::placeholder{
+        font-size: 15px;
+    }
+    .mensaje-codificado{
+        width: 400px;
+    }
+}
+@media screen and (max-width:1559){
+    .main{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}

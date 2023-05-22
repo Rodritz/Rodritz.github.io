@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="https://www.aluracursos.com/" target="blanck" class="logo">a</a>
+        </div>
+    </header>
+    <main class="main">
+        <section class="contenedor1">  
+            <div class="contenedor-textarea">
+                <textarea cols="55" 
+                rows="15"
+                class="textarea" 
+                placeholder="Ingresa aquí el texto que desees encriptar o desencriptar aquí."></textarea>
+            </div>   
+            <h6 class="h6-contenedor1">Solo letras minusculas y sin acento</h6>
+            <div class="btn">
+                <button type="button" class="btn-encriptar" id="btn-encriptar" >Encriptar</button>
+                <button type="button" class="btn-desencriptar" id="btn-desencriptar">Desencriptar</button>
+                <button type="button" class="btn-eliminar" id="btn-eliminar" >Eliminar</button>
+            </div>
+        </section>
+        <section class="contenedor2">
+            <textarea class="glass" cols="58" rows="41"></textarea>
+            <textarea cols="35" 
+                rows="16"
+                class="mensaje-codificado">
+            </textarea>
+            <img class="imagen-hacker" id="imagen-hacker" src="imagenes/hacker.png" alt="hacker" >
+            <div class="btn3">
+                <button class="btn-copiar" id="btn-copiar">Copiar</button>
+                <button class="btn-pegar" id="btn-pegar">Pegar</button>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <p class="copyright">&copy Copyright Urquía Rodrigo</p>
+            <a href="https://github.com/Rodritz" target="_blank"><img class="footer-logo" src="imagenes/github.png" alt="github"></a>
+            <a href="https://www.linkedin.com/in/rodrigo-urqu%C3%ADa-8583581a9/" target="_blank"><img class="footer-logo" src="imagenes/linkedIn.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+    <script src="script/index.js"></script>    
+</body>
+</html>
