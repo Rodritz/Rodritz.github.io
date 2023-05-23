@@ -23,7 +23,6 @@ function encriptar(){
         const texto = encriptarMensaje(textarea.value)
         mensajeCodificado.value = texto 
         textarea.value ="";
-        //mensajeCodificado.style.backgroundImage ="none";
         imagenHacker.style.display = "none"
 
         botonEncriptar.innerText = '¡Texto Encriptado!';
@@ -50,7 +49,6 @@ function desencriptar(){
         const texto = desencriptarMensaje(textarea.value)
         mensajeCodificado.value = texto
         textarea.value ="";
-        //mensajeCodificado.style.backgroundImage ="none"
         imagenHacker.style.display = "none"
 
         botonDesencriptar.innerText = '¡Texto Desencriptado!';
@@ -83,7 +81,6 @@ function copiar(){
         botonCopiar.innerText = 'Copiar';
         }, 2000);
         mensajeCodificado.value="";
-        //mensajeCodificado.style.backgroundImage = backgroundImagePrevio;
         imagenHacker.style.display = "block"
     }        
 }
@@ -100,7 +97,6 @@ function eliminar(){
     if(textarea.value !=="" || mensajeCodificado.value !== ""){  
         textarea.value ="";
         mensajeCodificado.value = "";
-        //mensajeCodificado.style.backgroundImage = backgroundImagePrevio;
         imagenHacker.style.display = "block"
 
         botonEliminar.innerText = '¡Eliminado!';

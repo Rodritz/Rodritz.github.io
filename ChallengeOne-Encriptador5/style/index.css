@@ -10,9 +10,7 @@ body{
 }
 
 /*-----------Header----------*/
-/*.header{
-    height: 180px;
-}*/
+
 .logo{ 
     margin-left: 40px;
     font-size: 180px;
@@ -52,13 +50,6 @@ body{
 .main{
     display: flex;
     flex-wrap: wrap;
-
-    /*justify-content: center;*/
-    /*width: 1440px;*/
-    /*height: auto;*/
-    /*margin: 0 40px;*/
-    /*position: relative;*/
-   
 }
 
 /*-----aca comienza el css del primer contenedor-----*/
@@ -67,7 +58,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /*align-items: center;*/
 }
 
 .contenedor-textarea{
@@ -100,14 +90,14 @@ body{
     backdrop-filter: blur(3px);           
 }
 
-.h6-contenedor1{
-    margin: 10px 124.9px;
+.h6{
+    margin: 5px 124.9px;
     font-size: 0.8em;
-    /*background-color: transparent;*/
     color: #E5E5E5;
 }
-.h6-contenedor1:before{
-    content: "";
+.exclamation{
+    padding-right: 5px;
+    height: 15px;
 }
 
 .btn{
@@ -186,8 +176,6 @@ body{
     font-weight: bold;
     
 }
-
-
 /*-----aca comienza el css del segundo contenedor-----*/
 .contenedor2{
     position: relative;
@@ -295,13 +283,36 @@ body{
 }
 
 /*responsive*/
-@media screen and (min-width: 1100px) and (max-width: 1559px){
+/*ok funcionando*/
+@media screen and (min-width: 1150px) and (max-width: 1559px){
     .main{
         display: flex;
         flex-wrap: nowrap;
     }
+    .textarea{
+        width: 600px;
+    }
+    .h6{
+        display: flex;
+        justify-content: center;
+    } 
 }
 
+/*revisar*/
+@media screen and (min-width: 713px) and (max-width: 1149px){
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .conteneder2{
+        width: 100%;
+    }
+    
+}
+
+
+/*revisar*/
 @media screen and (max-width:992px){
     .logo{
         font-size: 160px;
@@ -310,12 +321,12 @@ body{
         width: 992px;
     }
     
-    .h6-contenedor1{
+    .h6{
         display: flex;
         justify-content: center;
     }    
 }
-
+/*revisar*/
 @media screen and (max-width:768px){
     
     .textarea{
@@ -334,6 +345,7 @@ body{
     }
 }
 
+/*ok todos funcionando*/
 @media screen and (max-width:600px){
     .logo{
         font-size: 140px;
@@ -378,13 +390,11 @@ body{
     ::placeholder{
         font-size: 15px;
     }
+    .glass{
+        width: 400px;
+    }
     .mensaje-codificado{
         width: 400px;
     }
 }
-@media screen and (max-width:1559){
-    .main{
-        display: flex;
-        flex-wrap: nowrap;
-    }
-}
+
