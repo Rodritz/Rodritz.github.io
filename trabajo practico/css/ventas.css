@@ -1,0 +1,153 @@
+body { 
+    margin: 0;
+    scroll-behavior: smooth;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+/*navbar*/
+.navbar {
+    padding: 8px 50px 8px 50px;
+    position: sticky;
+    width: 100%;
+    z-index: 10;
+    opacity: 0.9;
+}   
+
+.navbar-collapse {
+    justify-content: flex-end;    
+}
+
+#comprarTickets {
+    color: rgb(110, 192, 110);
+}
+
+
+/* primer contenedor*/
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px 0px 5px 0px;
+    gap: 5px;
+}
+
+.card {
+    border: none ;
+}
+.card-body {      
+    margin: 0px 2px;  
+    padding: 20px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    height: auto;    
+}
+
+#card1 {
+    border: 0.5px solid  rgb(26, 93, 170);
+}
+#card2 {
+    border: 0.5px solid darkcyan;
+}
+#card3 {
+    border: 0.5px solid yellow;
+}
+
+#cardTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#cardText {
+    font-size: 16px;
+}
+
+#discount {
+    font-weight: bold;
+}
+
+#presentarDocu {
+    font-size: 13px;
+    opacity: 0.7;
+    margin: 0;
+}
+
+
+/* segundo contenedor */
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;    
+}
+
+.col {
+    width: 600px;
+}
+
+h6 {
+    font-size: 12px;
+    margin: 0px;
+    opacity: 0.8;
+}
+
+#aPagar::-webkit-input-placeholder {
+    color: rgb(26, 93, 170);
+}    
+#aPagar {
+    color: rgb(26, 93, 170);
+}
+
+.row-btn    {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}   
+.btn {
+    background-color: rgb(150,201,62);
+    color: white;
+    width: 292px;
+    border: none;
+    border-radius: 4px;
+    margin: 15px 5px 15px 0px;
+    padding: 8px;
+}
+
+/*footer*/
+
+.contenedor-footer {
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 80px;
+    align-items: center;    
+    display: inline-flex;
+    justify-content: space-evenly;
+    background-color: rgb(36, 67, 85);      
+}
+
+.contenedor-footer a {
+    text-decoration: none;
+    color: white;
+    width: min-content;    
+}
+
+/*responsive*/
+
+@media screen and (max-width: 620px) {
+    .contenedor-footer {
+        zoom: 80%;
+    } 
+
+    form {       
+        margin-left: 10px;            
+    }
+}
+
